@@ -1,0 +1,18 @@
+package codewars;
+//https://www.codewars.com/kata/546e2562b03326a88e000020
+public class Questao4 {
+public static void main(String[] args) {
+	
+}
+public int squareDigits(int n) {
+    String result = ""; 
+    
+    while (n != 0) {
+      int digit = n % 10 ;
+      result = digit*digit + result ;
+      n /= 10 ;
+    }
+    
+    return Integer.parseInt(result) ;
+  }
+}
